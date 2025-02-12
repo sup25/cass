@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { NavLinks } from "../navLinks";
 import Button from "../../button";
+import Link from "next/link";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -53,17 +55,29 @@ const MobileMenu = () => {
           {/* Navigation Items */}
           <nav className="flex flex-col gap-4">
             {NavLinks.map((navLink) => (
-              <div
+              <Link
+                href={navLink.href}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
                 key={navLink.title}
                 className={`${
-                  pathname === navLink.path ? "text-red-500" : "text-black"
+                  pathname === navLink.path ? "text-teal-600" : "text-black"
                 }`}
               >
                 {navLink.title}
-              </div>
+              </Link>
             ))}
           </nav>
-          <Button className="hover:bg-teal-500 ">Contact Us</Button>
+          <Button
+            onClick={() => {
+              router.push("/contact");
+              setIsOpen(false);
+            }}
+            className="hover:bg-teal-500 bg-teal-600 text-white"
+          >
+            Contact Us
+          </Button>
         </div>
       </div>
 
