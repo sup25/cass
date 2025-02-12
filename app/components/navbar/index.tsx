@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link href={"/"} className="flex items-center gap-4">
             <Image src="/logo.jpg" height={200} width={200} alt="logo" />
           </Link>
-          <div className="w-full justify-end  gap-6 items-center hidden lg:flex">
+          {/* <div className="w-full justify-end  gap-6 items-center hidden lg:flex">
             {NavLinks.map((navLink) => (
               <Link
                 href={navLink.href}
@@ -36,7 +36,7 @@ const Navbar = () => {
             >
               Contact Us
             </Button>
-          </div>
+          </div> */}
           <MobileMenu />
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import { BsArrowRight, BsPlayCircle } from "react-icons/bs";
+import CountUp from "react-countup";
+import StatItem from "./components/statItem";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
@@ -24,18 +25,11 @@ const Button: React.FC<ButtonProps> = ({
   </button>
 );
 
-const StatItem: React.FC<IStatItemProps> = ({ value, label }) => (
-  <div className="text-white text-center">
-    <div className="text-4xl font-bold mb-2">{value}</div>
-    <div className="text-sm font-medium uppercase tracking-wide">{label}</div>
-  </div>
-);
-
 const HomePage: React.FC = () => {
   return (
     <div className="section relative min-h-screen">
       <div className="container">
-        <div className="absolute inset-0 bg-[url('/landing.jpg')] bg-cover md:bgfix  bg-scroll bg-no-repeat ">
+        <div className="absolute inset-0 bg-[url('/landing.jpg')] bg-cover md:bgfix bg-right md:bg-top  bg-scroll bg-no-repeat ">
           <div className="absolute inset-0 bg-black/20" />
         </div>
 
@@ -61,24 +55,10 @@ const HomePage: React.FC = () => {
                   Circular Economy
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-                  <Button className="group w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white bg-teal-600 hover:bg-teal-500 shadow-xl hover:-translate-y-1">
-                    Get Started
-                    <BsArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-
-                  <Button className="w-full sm:w-auto px-8 py-4 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-xl hover:-translate-y-1">
-                    <BsPlayCircle className="mr-3 h-5 w-5" />
-                    Watch Demo
-                  </Button>
-                </div>
-
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-12 sm:gap-16">
-                  <StatItem value="50K+" label="Tonnes Recycled" />
-                  <div className="hidden sm:block h-16 w-px bg-white/20" />
-                  <StatItem value="100+" label="Global Partners" />
-                  <div className="hidden sm:block h-16 w-px bg-white/20" />
-                  <StatItem value="95%" label="Recovery Rate" />
+                <div className="flex md:flex-row flex-col items-end justify-end gap-4 ">
+                  <StatItem value={50000} label="Tonnes Recycled" />
+                  <StatItem value={100} label="Global Partners" />
+                  <StatItem value={95} label="Recovery Rate" />
                 </div>
               </div>
             </div>

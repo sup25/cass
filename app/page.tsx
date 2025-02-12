@@ -1,3 +1,4 @@
+import About from "./(modules)/home/about";
 import KeyFacts from "./(modules)/home/keyFacts";
 import HomePage from "./(modules)/home/page";
 import Slider from "./(modules)/home/slider";
@@ -8,6 +9,7 @@ export default function Home() {
       <HomePage />
       <KeyFacts />
       <Slider />
+      <About />
     </div>
   );
 }
