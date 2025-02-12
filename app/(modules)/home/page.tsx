@@ -1,29 +1,6 @@
 import React from "react";
-import CountUp from "react-countup";
+
 import StatItem from "./components/statItem";
-
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string;
-  children: React.ReactNode;
-}
-
-interface IStatItemProps {
-  value: string;
-  label: string;
-}
-
-const Button: React.FC<ButtonProps> = ({
-  children,
-  className = "",
-  ...props
-}) => (
-  <button
-    className={`inline-flex items-center justify-center rounded-lg transition-all duration-200 ${className}`}
-    {...props}
-  >
-    {children}
-  </button>
-);
 
 const HomePage: React.FC = () => {
   return (

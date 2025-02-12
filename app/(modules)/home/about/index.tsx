@@ -90,8 +90,8 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
           <p className="text-lg max-w-3xl mx-auto">
-            At Cassandra, we're committed to creating a sustainable future by
-            transforming waste into valuable resources. Our innovative
+            At Cassandra, we&apos;re committed to creating a sustainable future
+            by transforming waste into valuable resources. Our innovative
             technology not only addresses the global waste crisis but also
             significantly reduces carbon emissions in the process.
           </p>
