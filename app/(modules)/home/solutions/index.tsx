@@ -21,9 +21,9 @@ const data = [
   {
     icon: Cloud,
     color: "text-teal-600",
-    title: "80% reduction in carbon footprint",
+    title: "80% reduction in carbon foot print",
     description: [
-      "cassandra reactors acheive upto 80% reduction in carbon emissions as compared to other.",
+      "Cassandra reactors acheive upto 80% reduction in carbon emissions as compared to other.",
     ],
   },
 ];
