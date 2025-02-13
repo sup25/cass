@@ -13,7 +13,7 @@ export default function Home() {
       <HomePage />
       <TextBox preheading="Key Facts" heading="The Global Waste Problem!" />
       <Problems />
-      <TextBox heading="Chemical Recycling - Pyrolysis - Circular Economy" />
+      <TextBox heading="Cassandra Pyrolysis Reactors" />
       <Solutions />
       <About />
       <Certification />

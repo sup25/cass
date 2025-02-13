@@ -4,19 +4,19 @@ const certifications = [
   {
     image: "/iscc.svg",
     alt: "International Sustainability and Carbon Certification",
-    width: 300,
+    width: 200,
     height: 200,
   },
   {
     image: "/echa.svg",
     alt: "European Chemicals Agency",
-    width: 300,
+    width: 200,
     height: 200,
   },
   {
     image: "/reach.png",
     alt: "REACH Certification",
-    width: 300,
+    width: 200,
     height: 200,
   },
 ];

@@ -53,7 +53,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 sm:text-5xl font-archivo uppercase">
-              Revolutionizing Waste Management
+              Waste management for a circular economy 
             </h2>
             <p className="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
               Transforming environmental challenges into sustainable solutions
