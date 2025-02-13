@@ -13,7 +13,7 @@ const data = [
   },
   {
     icon: Recycle,
-    color: "text-blue-600",
+    color: "text-[#6CB4EE]",
     title: "Recycling Rate",
     value: "9%",
     description: ["Of plastic waste is recycled", "91% remains unrecycled"],
@@ -27,7 +27,7 @@ const data = [
   },
   {
     icon: AlertTriangle,
-    color: "text-blue-600",
+    color: "text-[#6CB4EE]",
     title: "Total Waste Impact",
     value: "8B Tons",
     description: ["Of plastic waste in landfills and oceans"],

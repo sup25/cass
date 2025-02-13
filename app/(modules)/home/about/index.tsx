@@ -10,7 +10,7 @@ const AboutUs = () => {
         "Our patent-protected technology breaks down hydrocarbon-based waste into olefin components, creating new products like plastics, tires, and fuel.",
     },
     {
-      icon: <Leaf className="w-12 h-12 mb-4 text-teal-600" />,
+      icon: <Leaf className="w-12 h-12 mb-4 text-[#6CB4EE]" />,
       title: "Environmental Impact",
       description:
         "By transforming waste into valuable resources, we eliminate the need for crude oil in plastic production and significantly reduce carbon emissions.",
@@ -22,7 +22,7 @@ const AboutUs = () => {
         "One machine handles multiple waste streams including tires, plastics, and oil-contaminated soil, offering an adaptable solution for various industries.",
     },
     {
-      icon: <BarChart className="w-12 h-12 mb-4 text-teal-600" />,
+      icon: <BarChart className="w-12 h-12 mb-4 text-[#6CB4EE]" />,
       title: "Certified Impact",
       description:
         "Our process is certified for carbon credits, achieving a minimum 80% reduction in carbon emissions during the creation of new hydrocarbon-based products.",

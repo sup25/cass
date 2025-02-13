@@ -10,7 +10,7 @@ const Timeline = () => {
   // Define soft, cohesive colors
   const colors = {
     secondary: "#0D9488", // Teal-600
-    neutral: "#fff", // Grey-200
+    neutral: "#6CB4EE", // Grey-200
     light: "#F8FAFC",
     text: "#1F2937", // Dark text
   };
@@ -19,7 +19,7 @@ const Timeline = () => {
     <div className="section ">
       <div className="container mx-auto px-4">
         <div className="md:py-20 py-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-700">
+          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">
             The CASO technology
           </h2>
           <VerticalTimeline animate={true}>
@@ -34,16 +34,16 @@ const Timeline = () => {
                 borderRight: `7px solid ${colors.neutral}`,
               }}
               date="2025"
-              dateClassName="text-gray-600 font-semibold"
-              iconStyle={{ background: colors.neutral, color: colors.text }}
+              dateClassName="text-gray-900 font-semibold"
+              iconStyle={{ background: colors.neutral, color: colors.light }}
               icon={<Factory className="w-5 h-5" />}
             >
-              <div className="text-gray-800">
+              <div className="text-gray-50">
                 <h3 className="text-xl font-bold mb-1">
                   1.6MW CASO Reactor Development
                 </h3>
                 <h4 className="text-lg opacity-90 mb-2">Major Milestone</h4>
-                <p className="text-gray-700">
+                <p className="text-gray-50">
                   Development of 1.6MW CASO reactor and agreement with key JV
                   partners to roll-out technology.
                 </p>
@@ -58,7 +58,7 @@ const Timeline = () => {
                 borderRadius: "0.75rem",
               }}
               date="2024"
-              dateClassName="text-gray-600 font-semibold"
+              dateClassName="text-gray-900 font-semibold"
               iconStyle={{ background: colors.secondary, color: colors.light }}
               icon={<Recycle className="w-5 h-5" />}
             >
@@ -80,18 +80,18 @@ const Timeline = () => {
                 borderRadius: "0.75rem",
               }}
               date="2012"
-              dateClassName="text-gray-600 font-semibold"
-              iconStyle={{ background: colors.neutral, color: colors.text }}
+              dateClassName="text-gray-900 font-semibold"
+              iconStyle={{ background: colors.neutral, color: colors.light }}
               icon={<FlaskConical className="w-5 h-5" />}
             >
-              <div className="text-gray-800">
+              <div className="text-gray-50">
                 <h3 className="text-xl font-bold mb-1">
                   Venezuela PDVA Commission
                 </h3>
                 <h4 className="text-lg opacity-90 mb-2">
                   Heavy Oil Processing
                 </h4>
-                <p className="text-gray-700">
+                <p className="text-gray-50">
                   Commissioned by PDVA in Venezuela to use reactor to process
                   heavy oil sludge.
                 </p>
@@ -106,7 +106,7 @@ const Timeline = () => {
                 borderRadius: "0.75rem",
               }}
               date="2012"
-              dateClassName="text-gray-600 font-semibold"
+              dateClassName="text-gray-900 font-semibold"
               iconStyle={{ background: colors.secondary, color: colors.light }}
               icon={<FlaskConical className="w-5 h-5" />}
             >
@@ -130,18 +130,18 @@ const Timeline = () => {
                 borderRadius: "0.75rem",
               }}
               date="1998 - 2010"
-              dateClassName="text-gray-600 font-semibold"
-              iconStyle={{ background: colors.neutral, color: colors.text }}
+              dateClassName="text-gray-900 font-semibold"
+              iconStyle={{ background: colors.neutral, color: colors.light }}
               icon={<Atom className="w-5 h-5" />}
             >
               <div className="text-white">
-                <h3 className="text-xl font-bold mb-1 text-gray-600">
+                <h3 className="text-xl font-bold mb-1 text-gray-50">
                   Early CASO Reactor Development
                 </h3>
-                <h4 className="text-lg opacity-90 mb-2 text-gray-600">
+                <h4 className="text-lg opacity-90 mb-2 text-gray-50">
                   Technology Evolution
                 </h4>
-                <p className="text-gray-600">
+                <p className="text-gray-50">
                   Early development of CASO reactor technology as a 600kW
                   reactor, leading to current 1.6MW model.
                 </p>
@@ -149,7 +149,7 @@ const Timeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-              iconStyle={{ background: colors.neutral, color: colors.text }}
+              iconStyle={{ background: colors.neutral, color: colors.light }}
               icon={<StarIcon className="w-5 h-5" />}
             />
           </VerticalTimeline>

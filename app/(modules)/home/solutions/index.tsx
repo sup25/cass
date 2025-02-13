@@ -12,7 +12,7 @@ const data = [
   },
   {
     icon: BarChart,
-    color: "text-blue-600",
+    color: "text-[#6CB4EE]",
     title: "Up to 70% Oil Recovery",
     description: [
       "Achieve up to 70% oil output with our advanced processing technology.",
@@ -21,8 +21,10 @@ const data = [
   {
     icon: Cloud,
     color: "text-teal-600",
-    title: "80%",
-    description: ["Reduction in carbon emissions"],
+    title: "80% reduction in carbon footprint",
+    description: [
+      "cassandra reactors acheive upto 80% reduction in carbon emissions as compared to other.",
+    ],
   },
 ];
 
