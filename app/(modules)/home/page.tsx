@@ -6,8 +6,8 @@ const HomePage: React.FC = () => {
   return (
     <div className="section relative min-h-screen">
       <div className="container">
-        <div className="absolute inset-0 bg-[url('/landing.jpg')] bg-cover md:bgfix bg-right md:bg-top  bg-scroll bg-no-repeat ">
-          <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-[url('/landing.jpg')] bg-cover md:bgfix bg-center md:bg-top  bg-scroll bg-no-repeat ">
+          <div className="absolute inset-0 bg-black/30" />
         </div>
 
         <div className="relative z-10">
@@ -22,7 +22,7 @@ const HomePage: React.FC = () => {
 
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
                   Leading the Future of{" "}
-                  <span className="text-teal-600">
+                  <span className="text-teal-500">
                     Plastic & Tyre Recycling
                   </span>
                 </h1>
@@ -32,9 +32,11 @@ const HomePage: React.FC = () => {
                   Circular Economy
                 </p>
 
-                <div className="flex md:flex-row flex-col items-end justify-end gap-4 ">
+                <div className="flex md:flex-row flex-col md:items-end items-center justify-end  gap-4 ">
                   <StatItem value={50000} label="Tonnes Recycled" />
+                  <div className="hidden sm:block h-16 w-px bg-white/20" />
                   <StatItem value={100} label="Global Partners" />
+                  <div className="hidden sm:block h-16 w-px bg-white/20" />
                   <StatItem value={95} label="Recovery Rate" />
                 </div>
               </div>

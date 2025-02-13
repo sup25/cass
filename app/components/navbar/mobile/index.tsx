@@ -61,7 +61,7 @@ const MobileMenu = () => {
                   setIsOpen(false);
                 }}
                 key={navLink.title}
-                className={`${
+                className={`hover:text-teal-600 transition-all duration-500 ease-in-out capatalize font-medium text-2xl ${
                   pathname === navLink.path ? "text-teal-600" : "text-black"
                 }`}
               >
@@ -74,7 +74,7 @@ const MobileMenu = () => {
               router.push("/contact");
               setIsOpen(false);
             }}
-            className="hover:bg-teal-500 bg-teal-600 text-white"
+            className="hover:bg-teal-500 uppercase bg-teal-600 text-white"
           >
             Contact Us
           </Button>
