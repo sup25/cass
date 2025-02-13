@@ -1,4 +1,5 @@
 import About from "./(modules)/home/about";
+import Certification from "./(modules)/home/certification";
 import TextBox from "./(modules)/home/keyFacts";
 import KeyFacts from "./(modules)/home/keyFacts";
 import HomePage from "./(modules)/home/page";
@@ -15,6 +16,7 @@ export default function Home() {
       <TextBox heading="Chemical Recycling - Pyrolysis - Circular Economy" />
       <Solutions />
       <About />
+      <Certification />
       <Timeline />
     </div>
   );

@@ -30,12 +30,14 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="  min-h-screen  ">
-      {/* Mission Statement - Now First */}
+    <div className="min-h-screen">
+      {/* Mission Statement */}
       <div className="bg-teal-600">
-        <div className="container  mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="text-center text-gray-50">
-            <h1 className="text-4xl font-bold mb-6">About Us</h1>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-archivo uppercase">
+              About Us
+            </h2>
             <p className="text-xl max-w-3xl mx-auto leading-relaxed">
               At Cassandra, we&apos;re committed to creating a sustainable
               future by transforming waste into valuable resources. Our
@@ -47,10 +49,10 @@ const AboutUs = () => {
       </div>
 
       {/* Hero Section */}
-      <div className=" py-16">
+      <div className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 sm:text-5xl font-archivo uppercase">
               Revolutionizing Waste Management
             </h2>
             <p className="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">

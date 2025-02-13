@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        archivo: "var(--font-archivo)",
+      },
       maxWidth: {
         container: "1280px",
       },

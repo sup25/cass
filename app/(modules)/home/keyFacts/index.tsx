@@ -12,7 +12,7 @@ const TextBox = ({ heading, preheading }: Ifacts) => {
           <p className="md:text-2xl text-base mb-10 uppercase font-semibold text-center text-teal-600">
             {preheading}
           </p>
-          <h2 className="md:text-5xl max-w-screen-md text-3xl font-bold text-center text-black">
+          <h2 className="md:text-5xl max-w-screen-lg text-3xl font-bold font-archivo uppercase text-center text-black">
             {heading}
           </h2>
         </div>

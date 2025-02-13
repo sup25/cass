@@ -7,7 +7,9 @@ const ContactUs = () => {
       <div className="container">
         <Navbar />
         <div className="h-screen flex flex-col  w-full items-center justify-center">
-          <h1 className="text-black text-3xl font-bold uppercase">Contac us</h1>
+          <h1 className="text-black text-3xl font-bold uppercase font-archivo ">
+            Contac us
+          </h1>
           <h2 className="text-black text-3xl font-semibold uppercase"> WIP</h2>
         </div>
       </div>

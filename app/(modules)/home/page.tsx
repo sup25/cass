@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
                 Transforming Waste into Value
               </p>
             </div>
-            <h1 className="text-5xl text-center md:text-6xl lg:text-7xl font-bold text-gray-900 mb-10  leading-tight w-full">
+            <h1 className="text-5xl text-center md:text-6xl lg:text-7xl font-bold  font-archivo text-gray-900 mb-10  leading-tight w-full">
               Leading the Future of Recycling.
             </h1>
           </div>
