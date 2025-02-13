@@ -2,13 +2,6 @@ import React from "react";
 import { Recycle, Leaf, Factory, BarChart } from "lucide-react";
 
 const AboutUs = () => {
-  const stats = [
-    { value: "400M", label: "Tons of plastic waste generated yearly" },
-    { value: "1B", label: "End-of-life tires annually" },
-    { value: "80%", label: "Reduction in carbon emissions" },
-    { value: "80%", label: "Recycling efficiency" },
-  ];
-
   const features = [
     {
       icon: <Recycle className="w-12 h-12 mb-4 text-teal-600" />,
@@ -37,15 +30,30 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 ">
+    <div className="  min-h-screen  ">
+      {/* Mission Statement - Now First */}
+      <div className="bg-teal-600">
+        <div className="container  mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <div className="text-center text-gray-50">
+            <h1 className="text-4xl font-bold mb-6">About Us</h1>
+            <p className="text-xl max-w-3xl mx-auto leading-relaxed">
+              At Cassandra, we&apos;re committed to creating a sustainable
+              future by transforming waste into valuable resources. Our
+              innovative technology not only addresses the global waste crisis
+              but also significantly reduces carbon emissions in the process.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className=" py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+            <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">
               Revolutionizing Waste Management
-            </h1>
-            <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
+            </h2>
+            <p className="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
               Transforming environmental challenges into sustainable solutions
               through innovative technology and circular economy principles.
             </p>
@@ -53,48 +61,25 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Stats Section */}
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-sm p-6 text-center"
-            >
-              <div className="text-3xl font-bold text-teal-600">
-                {stat.value}
-              </div>
-              <div className="mt-2 text-sm text-gray-600">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Features Section */}
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature, index) => (
-            <div key={index} className="text-center">
-              <div className="flex justify-center">{feature.icon}</div>
-              <h3 className="mt-2 text-xl font-semibold text-gray-900">
-                {feature.title}
-              </h3>
-              <p className="mt-4 text-gray-600">{feature.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Mission Statement */}
-      <div className="bg-teal-600 text-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-          <p className="text-lg max-w-3xl mx-auto">
-            At Cassandra, we&apos;re committed to creating a sustainable future
-            by transforming waste into valuable resources. Our innovative
-            technology not only addresses the global waste crisis but also
-            significantly reduces carbon emissions in the process.
-          </p>
+      <div className="pt-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex justify-center">{feature.icon}</div>
+                <h3 className="mt-4 text-xl font-semibold text-gray-900">
+                  {feature.title}
+                </h3>
+                <p className="mt-4 text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

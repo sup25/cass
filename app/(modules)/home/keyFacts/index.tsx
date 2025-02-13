@@ -1,15 +1,19 @@
 import React from "react";
+interface Ifacts {
+  preheading?: string;
+  heading?: string;
+}
 
-const KeyFacts = () => {
+const TextBox = ({ heading, preheading }: Ifacts) => {
   return (
     <div className="section">
       <div className="container">
-        <div className="md:py-20 py-10">
-          <p className="md:text-2xl text-base mb-10 font-semibold text-center text-teal-600">
-            Key Facts
+        <div className="md:py-20 py-10 flex flex-col w-full items-center justify-center">
+          <p className="md:text-2xl text-base mb-10 uppercase font-semibold text-center text-teal-600">
+            {preheading}
           </p>
-          <h2 className="md:text-5xl text-3xl font-bold text-center text-black">
-            The Global Waste Problem!
+          <h2 className="md:text-5xl max-w-screen-md text-3xl font-bold text-center text-black">
+            {heading}
           </h2>
         </div>
       </div>
@@ -17,4 +21,4 @@ const KeyFacts = () => {
   );
 };
 
-export default KeyFacts;
+export default TextBox;

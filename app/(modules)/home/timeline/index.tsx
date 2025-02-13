@@ -10,15 +10,15 @@ const Timeline = () => {
   // Define soft, cohesive colors
   const colors = {
     secondary: "#0D9488", // Teal-600
-    neutral: "#e5e7eb", // Grey-200
+    neutral: "#fff", // Grey-200
     light: "#F8FAFC",
     text: "#1F2937", // Dark text
   };
 
   return (
-    <div className="section bg-slate-50">
+    <div className="section ">
       <div className="container mx-auto px-4">
-        <div className="md:py-24 py-12">
+        <div className="md:py-20 py-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-700">
             The CASO technology
           </h2>

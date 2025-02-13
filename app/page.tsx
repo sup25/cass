@@ -1,17 +1,21 @@
 import About from "./(modules)/home/about";
+import TextBox from "./(modules)/home/keyFacts";
 import KeyFacts from "./(modules)/home/keyFacts";
 import HomePage from "./(modules)/home/page";
-import Slider from "./(modules)/home/slider";
+import Problems from "./(modules)/home/problems";
+import Solutions from "./(modules)/home/solutions";
 import Timeline from "./(modules)/home/timeline";
 
 export default function Home() {
   return (
     <div>
       <HomePage />
-      <KeyFacts />
-      <Slider />
-      <Timeline />
+      <TextBox preheading="Key Facts" heading="The Global Waste Problem!" />
+      <Problems />
+      <TextBox heading="Chemical Recycling - Pyrolysis - Circular Economy" />
+      <Solutions />
       <About />
+      <Timeline />
     </div>
   );
 }

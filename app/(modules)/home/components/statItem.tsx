@@ -13,7 +13,7 @@ const StatItem: React.FC<IStatItemProps> = ({
   label,
   isPercentage = false,
 }) => (
-  <div className="text-white text-center">
+  <div className="text-gray-900 text-center">
     <div className="text-4xl font-bold mb-2">
       <CountUp start={0} end={value} duration={2} separator="," />
       {isPercentage ? "%" : "+"}

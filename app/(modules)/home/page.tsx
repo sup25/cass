@@ -18,7 +18,7 @@ const HomePage: React.FC = () => {
       </video>
 
       {/* Overlay to Improve Readability */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black/0"></div>
 
       {/* Content on top of the video */}
       <div className="container relative z-10 flex flex-col min-h-screen w-full">
@@ -26,11 +26,11 @@ const HomePage: React.FC = () => {
         <div className="flex flex-col items-center justify-end pb-20 pt-10 flex-1">
           <div className="flex flex-col items-center">
             <div className="inline-block mb-8 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full w-fit">
-              <p className="text-base text-white font-semibold">
+              <p className="text-base text-black font-semibold">
                 Transforming Waste into Value
               </p>
             </div>
-            <h1 className="text-5xl text-center md:text-6xl lg:text-7xl font-bold text-white mb-10  leading-tight w-full">
+            <h1 className="text-5xl text-center md:text-6xl lg:text-7xl font-bold text-gray-900 mb-10  leading-tight w-full">
               Leading the Future of Recycling.
             </h1>
           </div>

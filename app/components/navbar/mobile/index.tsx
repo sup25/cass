@@ -24,9 +24,9 @@ const MobileMenu = () => {
           aria-label="Open Menu"
         >
           <div className="w-6 h-5 relative flex flex-col justify-between ">
-            <span className="block h-0.5 w-full bg-white" />
-            <span className="block h-0.5 w-full bg-white" />
-            <span className="block h-0.5 w-full bg-white" />
+            <span className="block h-0.5 w-full bg-black" />
+            <span className="block h-0.5 w-full bg-black" />
+            <span className="block h-0.5 w-full bg-black" />
           </div>
         </button>
       )}
