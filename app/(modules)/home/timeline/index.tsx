@@ -149,7 +149,7 @@ const Timeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-              iconStyle={{ background: colors.neutral, color: colors.light }}
+              iconStyle={{ background: colors.secondary, color: colors.light }}
               icon={<StarIcon className="w-5 h-5" />}
             />
           </VerticalTimeline>
